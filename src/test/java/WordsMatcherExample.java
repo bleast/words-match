@@ -1,9 +1,14 @@
-# words-match
-This project aims to provide the facility to easily match all/any words(may be some sensitive words) from a long text.
+import java.util.Arrays;
+import java.util.List;
 
-### Usage
-```java
+import com.xjd.ws.Result;
+import com.xjd.ws.Word;
+import com.xjd.ws.WordsMatcher;
+import com.xjd.ws.impl.DefaultWordsMatcher;
 
+public class WordsMatcherExample {
+
+	public static void main(String[] args) {
 		// 创建匹配器
 		WordsMatcher wordsMatcher = new DefaultWordsMatcher();
 		// 添加要匹配的关键字
@@ -27,6 +32,5 @@ This project aims to provide the facility to easily match all/any words(may be s
 				System.out.println("	" + word.getWord());
 			}
 		}
-```
-
-更多功能和模式请查看 WordsMatcher.java
+	}
+}
